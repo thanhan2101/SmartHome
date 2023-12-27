@@ -1,9 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
     <color name="blue_grey">#3C3F41</color>
     <color name="eco_green">#60B45A</color>
     <color name="eco_blue">#0064A4</color>
+
+    <!--  temperature color  -->
+    <color name="temp_cold">#4D93DD</color>
+    <color name="temp_warm">#ABED55</color>
+    <color name="temp_hot">#F53B3B</color>
+
+    <!--  AQI color  -->
+    <color name="aqi_good">#88E605</color>
+    <color name="aqi_moderate">#FEFF02</color>
+    <color name="aqi_unhealthy_1">#FF8000</color>
+    <color name="aqi_unhealthy_2">#F80000</color>
+    <color name="aqi_unhealthy_3">#B522FE</color>
+    <color name="aqi_hazardous">#8E0000</color>
+
+    <!--  brightness color  -->
+    <color name="brightness_max">#FFF000</color>
+    <color name="brightness_normal">#FFF4C9</color>
+    <color name="brightness_min">@color/black</color>
+
+    <!--  air humidity color  -->
+    <color name="air_humidity_low">#F3E5B7</color>
+    <color name="air_humidity_normal">#92F4F9</color>
+    <color name="air_humidity_high">#0BB5FB</color>
+
+
 </resources>
