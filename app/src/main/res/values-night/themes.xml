@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.SmartHome" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.SmartHome.NoActionBar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/eco_blue</item>
         <item name="colorPrimaryVariant">@color/eco_green</item>
@@ -12,10 +12,5 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorOnSecondary</item>
         <!-- Customize your theme here. -->
-    </style>
-    <!-- Base application theme. -->
-    <style name="Base.Theme.SmartHome" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
     </style>
 </resources>
