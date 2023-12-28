@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="495px"
+    android:layout_height="600px"
+    android:background="@color/white"
+    tools:context=".TemperatureFragment">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:gravity="center"
+        android:text="Temperature"
+        android:textSize="50px"
+        android:textColor="@color/black" />
+
+</FrameLayout>
