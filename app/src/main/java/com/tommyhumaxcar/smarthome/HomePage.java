@@ -29,6 +29,10 @@ public class HomePage extends AppCompatActivity {
         //add aqi fragment
         AqiFragment aqiFragment = AqiFragment.getInstance();
         loadFragment(aqiFragment, "", "");
+
+        //add air humidity fragment
+        AirHumidityFragment airHumidityFragment = AirHumidityFragment.getInstance();
+        loadFragment(airHumidityFragment, "", "");
     }
 
     private void loadFragment(Fragment fragment, String tag, String backStackName) {
