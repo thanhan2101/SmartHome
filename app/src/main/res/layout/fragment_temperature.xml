@@ -3,7 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="495px"
     android:layout_height="600px"
-    android:background="@color/white"
+    android:layout_marginTop="30px"
+    android:layout_marginStart="30px"
+    android:background="@drawable/element_widgets"
     tools:context=".TemperatureFragment">
 
     <TextView
