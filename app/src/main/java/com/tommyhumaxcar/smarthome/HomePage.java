@@ -37,6 +37,10 @@ public class HomePage extends AppCompatActivity {
         //add light intensity fragment
         LightIntensity lightIntensity = LightIntensity.getInstance();
         loadFragment(lightIntensity, "", "");
+
+        //add room fragment
+        RoomFragment roomFragment = RoomFragment.getInstance();
+        loadFragment(roomFragment, "", "");
     }
 
     private void loadFragment(Fragment fragment, String tag, String backStackName) {
