@@ -29,7 +29,7 @@ public class AqiFragment extends Fragment {
         return mInstance;
     }
 
-    public AqiFragment() {}
+    private AqiFragment() {}
 
 //    /**
 //     * Use this factory method to create a new instance of
