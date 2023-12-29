@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="495px"
+    android:layout_height="600px"
+    android:layout_marginTop="660px"
+    android:layout_marginStart="555px"
+    android:background="@drawable/element_widgets"
+    tools:context=".LightIntensity">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:gravity="center"
+        android:text="Light Intendity"
+        android:textSize="50px"
+        android:textColor="@color/black" />
+
+</FrameLayout>
