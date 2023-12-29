@@ -1,15 +1,16 @@
 package com.tommyhumaxcar.smarthome;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
-import android.util.Log;
-import android.view.View;
-import android.widget.FrameLayout;
+import android.view.MenuItem;
+import android.widget.Toast;
+
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.navigation.NavigationBarView;
 
 public class HomePage extends AppCompatActivity {
     private final String TAG = "HomePage";
@@ -41,6 +42,31 @@ public class HomePage extends AppCompatActivity {
         //add room fragment
         RoomFragment roomFragment = RoomFragment.getInstance();
         loadFragment(roomFragment, "", "");
+
+        String str1 = "user";
+        String str2 = "home";
+        String str3 = "setting";
+
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigationBar);
+        bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                final int i = item.getItemId();
+                int a = Integer.valueOf(R.id.person);
+                int b = Integer.valueOf(R.id.home);
+                int c = Integer.valueOf(R.id.settings);
+
+                if(item.getItemId() == R.id.person) {
+                    Toast.makeText(getApplicationContext(), str1, Toast.LENGTH_SHORT).show();
+                } else if (i == b) {
+                    Toast.makeText(getApplicationContext(), str2, Toast.LENGTH_SHORT).show();
+                } else if (i == c) {
+                    Toast.makeText(getApplicationContext(), str3, Toast.LENGTH_SHORT).show();
+                }
+                return false;
+            }
+        });
+
     }
 
     private void loadFragment(Fragment fragment, String tag, String backStackName) {
