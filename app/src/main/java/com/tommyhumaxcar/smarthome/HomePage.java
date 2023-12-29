@@ -22,10 +22,13 @@ public class HomePage extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        //add temperature fragment
         TemperatureFragment temperatureFragment = TemperatureFragment.getInstance();
-
-        //add fragment
         loadFragment(temperatureFragment, "", "");
+
+        //add aqi fragment
+        AqiFragment aqiFragment = AqiFragment.getInstance();
+        loadFragment(aqiFragment, "", "");
     }
 
     private void loadFragment(Fragment fragment, String tag, String backStackName) {

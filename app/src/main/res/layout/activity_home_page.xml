@@ -34,7 +34,7 @@
     <FrameLayout
         android:id="@+id/frameFragment"
         android:layout_width="match_parent"
-        android:layout_height="1780px"
+        android:layout_height="1910px"
         app:layout_constraintBottom_toBottomOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
