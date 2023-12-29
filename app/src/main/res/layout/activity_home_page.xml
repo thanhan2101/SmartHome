@@ -16,7 +16,7 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/eco_blue">
+            android:background="@color/eco_purple">
 
             <TextView
                 android:id="@+id/textTitle"
@@ -36,5 +36,17 @@
         android:layout_width="match_parent"
         android:layout_height="1910px"
         app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="140px"
+        android:background="@color/white"
+        app:menu="@menu/bottom_nav_menu"
+        app:itemIconSize="140px"
+        app:itemIconTint="@color/icon_deactive"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
